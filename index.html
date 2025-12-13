@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Confirmed - Preparation Steps</title>
+    
+    <script src="https://fast.wistia.com/embed/medias/py20gobqqy.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
     <style>
         :root {
             --color-primary: #FF33A1;
@@ -81,34 +85,12 @@
 
         .vsl-container {
             margin: 3rem 0;
+            border: 2px solid var(--color-accent);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 229, 229, 0.2);
         }
 
-        .vsl-placeholder {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: var(--color-gray);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            border: 2px solid var(--color-accent);
-            cursor: pointer;
-            position: relative;
-        }
-        
-        .vsl-placeholder::before {
-            content: '▶';
-            font-size: 3rem;
-            color: var(--color-primary);
-        }
-        
-        .vsl-placeholder p {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--color-primary);
-        }
-        
         .cta-button {
             display: block;
             width: 100%;
@@ -188,17 +170,16 @@
         <h2>Your 'Billionaire's Blueprint' session is secured.</h2>
         
         <div class="vsl-container">
-            <!-- 
-                THIS IS YOUR PRE-CALL VSL.
-                Script: "First off, respect. You just made a decision that 99% of people are too scared to make.
-                We are going to spend 2 hours completely re-engineering your life.
-                But for me to give you the highest level of strategy, I need you to do TWO things right now.
-                Watch this video to see exactly how to prepare."
-            -->
-            <div class="vsl-placeholder" onclick="alert('This is the PRE-CALL PREP VSL!')">
-                <p>IMPORTANT: WATCH BEFORE OUR CALL</p>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                    <div class="wistia_embed wistia_async_py20gobqqy videoFoam=true" style="height:100%;position:relative;width:100%">
+                        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                            <img src="https://fast.wistia.com/embed/medias/py20gobqqy/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            </div>
 
         <div class="step-list">
             <h3>Required Next Steps:</h3>
@@ -219,7 +200,6 @@
             </div>
         </div>
 
-        <!-- UPDATED CALENDLY LINK FOR BLUEPRINT ANALYSIS -->
         <a href="https://calendly.com/rafy-/blueprint-analysis" class="cta-button" target="_blank">
             Book My 2-Hour Session Now
         </a>

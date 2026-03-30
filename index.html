@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>You're In — Next Steps | Rafi's World</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://fast.wistia.com/embed/medias/4o8v4wpmhm.jsonp" async></script>
-<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<!-- Wistia Player -->
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/uzf9p7lkq8.js" async type="module"></script>
+<style>wistia-player[media-id='uzf9p7lkq8']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/uzf9p7lkq8/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "u7qcnghg1s");
 </script>
+
 <style>
 :root {
   --bg: #0C0A09;
@@ -25,21 +30,26 @@
   --text-dim: #A8A29E;
   --text-muted: #78716C;
 }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   min-height: 100vh;
 }
+
 .page {
   max-width: 760px;
   margin: 0 auto;
   padding: 48px 24px 80px;
 }
+
 /* ============================================
    CONFIRMATION HEADER
    ============================================ */
@@ -58,10 +68,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+
 .page-header {
   text-align: center;
   margin-bottom: 48px;
 }
+
 .page-header h1 {
   font-family: 'Instrument Serif', serif;
   font-size: clamp(32px, 5vw, 48px);
@@ -70,6 +82,7 @@ body {
   margin-bottom: 12px;
 }
 .page-header h1 em { color: var(--amber); font-style: italic; }
+
 .page-header .sub {
   font-size: 17px;
   color: var(--text-dim);
@@ -77,6 +90,7 @@ body {
   margin: 0 auto 24px;
   line-height: 1.6;
 }
+
 .email-notice {
   background: var(--surface);
   border: 1px solid var(--surface2);
@@ -87,12 +101,14 @@ body {
   display: inline-block;
 }
 .email-notice strong { color: var(--amber); }
+
 /* ============================================
    VSL
    ============================================ */
 .vsl-section {
   margin: 48px 0;
 }
+
 .vsl-label {
   display: flex;
   align-items: center;
@@ -110,6 +126,7 @@ body {
   height: 2px;
   background: var(--amber);
 }
+
 .vsl-wrapper {
   background: var(--surface);
   border: 2px solid var(--amber);
@@ -117,14 +134,14 @@ body {
   overflow: hidden;
   box-shadow: 0 0 40px var(--amber-glow);
 }
-.wistia_responsive_padding { padding: 56.25% 0 0 0; position: relative; }
-.wistia_responsive_wrapper { height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+
 /* ============================================
    STEPS
    ============================================ */
 .steps-section {
   margin: 48px 0;
 }
+
 .steps-title {
   font-family: 'Instrument Serif', serif;
   font-size: 24px;
@@ -132,6 +149,7 @@ body {
   text-align: center;
 }
 .steps-title em { color: var(--amber); font-style: italic; }
+
 .step {
   background: var(--surface);
   border: 1px solid var(--surface2);
@@ -144,9 +162,11 @@ body {
   transition: border-color 0.3s;
 }
 .step:hover { border-color: var(--amber); }
+
 .step-num {
   width: 32px;
   height: 32px;
+  min-width: 32px;
   background: var(--amber);
   color: var(--bg);
   border-radius: 50%;
@@ -157,6 +177,7 @@ body {
   font-size: 14px;
   flex-shrink: 0;
 }
+
 .step-text h4 {
   font-size: 15px;
   font-weight: 700;
@@ -167,6 +188,7 @@ body {
   color: var(--text-dim);
   line-height: 1.5;
 }
+
 /* ============================================
    CTA BUTTON
    ============================================ */
@@ -174,6 +196,7 @@ body {
   margin: 48px 0 32px;
   text-align: center;
 }
+
 .btn-book {
   display: block;
   width: 100%;
@@ -206,12 +229,14 @@ body {
   animation: shimmer 3s infinite;
 }
 @keyframes shimmer { 0% { left: -100%; } 100% { left: 100%; } }
+
 .cta-note {
   margin-top: 14px;
   font-size: 13px;
   color: var(--text-muted);
 }
 .cta-note span { color: var(--emerald); }
+
 /* ============================================
    URGENCY / REMINDER
    ============================================ */
@@ -229,6 +254,7 @@ body {
   line-height: 1.6;
 }
 .urgency-box strong { color: var(--amber); }
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -240,73 +266,50 @@ body {
   border-top: 1px solid var(--surface2);
   margin-top: 48px;
 }
+
 /* ============================================
    MOBILE
    ============================================ */
 @media (max-width: 768px) {
-  .page { padding: 32px 16px 60px; }
-  .page-header h1 { font-size: 28px; }
-  .page-header .sub { font-size: 15px; }
-  .confirm-badge { font-size: 11px; padding: 6px 16px; }
-  .email-notice { font-size: 13px; padding: 12px 16px; }
-  .vsl-section { margin: 36px 0; }
+  .page { padding: 28px 16px 60px; }
+
+  .page-header { margin-bottom: 36px; }
+  .page-header h1 { font-size: 26px; }
+  .page-header .sub { font-size: 15px; margin-bottom: 18px; }
+  .confirm-badge { font-size: 11px; padding: 6px 14px; }
+  .email-notice { font-size: 13px; padding: 12px 14px; }
+
+  .vsl-section { margin: 32px 0; }
   .vsl-wrapper { border-radius: 12px; }
-  .steps-title { font-size: 20px; }
-  .step { padding: 18px 18px; gap: 12px; }
-  .step-num { width: 28px; height: 28px; font-size: 13px; }
+  .vsl-label { font-size: 11px; letter-spacing: 1.5px; }
+
+  .steps-section { margin: 32px 0; }
+  .steps-title { font-size: 20px; margin-bottom: 18px; }
+  .step { padding: 16px 16px; gap: 12px; border-radius: 10px; margin-bottom: 10px; }
+  .step-num { width: 28px; height: 28px; min-width: 28px; font-size: 13px; }
   .step-text h4 { font-size: 14px; }
   .step-text p { font-size: 13px; }
-  .btn-book { padding: 18px; font-size: 15px; min-height: 56px; }
+
+  .cta-section { margin: 32px 0 24px; }
+  .btn-book { padding: 18px; font-size: 15px; min-height: 56px; border-radius: 10px; }
   .cta-note { font-size: 12px; }
-  .urgency-box { padding: 16px 18px; }
+
+  .urgency-box { padding: 16px 16px; border-radius: 10px; margin-top: 24px; }
   .urgency-box p { font-size: 13px; }
+
+  .footer { padding: 24px 16px; font-size: 11px; margin-top: 36px; }
 }
+
 @media (max-width: 390px) {
-  .page-header h1 { font-size: 25px; }
+  .page-header h1 { font-size: 23px; }
   .btn-book { font-size: 14px; }
 }
 </style>
 </head>
 <body>
 
-    <div class="container">
-        
-        <div class="header-icon">💎</div>
-        
-        <h1><span>Payment Confirmed.</span>
-            Welcome to the Inner Circle.</h1>
-        
-        <h2>Your 'Billionaire's Blueprint' session is secured.</h2>
-        
-        <div class="vsl-container">
-            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-                <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                    <div class="wistia_embed wistia_async_4o8v4wpmhm videoFoam=true" style="height:100%;position:relative;width:100%">
-                        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                            <img src="https://fast.wistia.com/embed/medias/4o8v4wpmhm/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
 <div class="page">
 
-        <div class="step-list">
-            <h3>Required Next Steps:</h3>
-            
-            <div class="step-item">
-                <div class="step-number">1</div>
-                <p><strong>Book Your Slot Below.</strong> Secure your 2-hour deep dive on my calendar immediately.</p>
-            </div>
-            
-            <div class="step-item">
-                <div class="step-number">2</div>
-                <p><strong>Complete the Intake Form.</strong> Once booked, you'll receive a form. I need your precise birth time (to the minute) 24 hours before we speak.</p>
-            </div>
-            
-            <div class="step-item">
-                <div class="step-number">3</div>
-                <p><strong>Block out 2.5 hours.</strong> We might go overtime. Do not schedule anything immediately after.</p>
   <!-- CONFIRMATION HEADER -->
   <div class="page-header">
     <div class="confirm-badge">✓ Payment Confirmed</div>
@@ -316,25 +319,15 @@ body {
       📩 Check your inbox — a confirmation email with your receipt and access details has been sent to <strong>your email</strong>.
     </div>
   </div>
-  <!-- VSL — Pre-call priming video (Maciek: pre-call VSL to overcome objections) -->
+
+  <!-- VSL -->
   <div class="vsl-section">
     <div class="vsl-label">⚡ Watch This Before Your Session</div>
     <div class="vsl-wrapper">
-      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-          <div class="wistia_embed wistia_async_4o8v4wpmhm videoFoam=true" style="height:100%;position:relative;width:100%">
-            <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-              <img src="https://fast.wistia.com/embed/medias/4o8v4wpmhm/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <wistia-player media-id="uzf9p7lkq8" aspect="1.7777777777777777"></wistia-player>
     </div>
   </div>
 
-        <a href="https://calendly.com/rafy-/blueprint-analysis" class="cta-button" target="_blank">
-            Book My 2-Hour Session Now
-        </a>
   <!-- REQUIRED STEPS -->
   <div class="steps-section">
     <h2 class="steps-title">Your 3 <em>Required</em> Next Steps</h2>
@@ -354,6 +347,7 @@ body {
         <p>Once booked, you'll receive a short form. I need your <strong style="color:var(--text)">precise birth time (to the minute), date, and location</strong> at least 24 hours before we speak — this is non-negotiable for chart accuracy.</p>
       </div>
     </div>
+
     <div class="step">
       <div class="step-num">3</div>
       <div class="step-text">
@@ -362,6 +356,7 @@ body {
       </div>
     </div>
   </div>
+
   <!-- CTA -->
   <div class="cta-section">
     <a href="https://calendly.com/rafy-/blueprint-analysis" class="btn-book" target="_blank">
@@ -369,11 +364,15 @@ body {
     </a>
     <p class="cta-note"><span>🛡</span> Your spot isn't confirmed until it's on my calendar. Book now to lock in your date.</p>
   </div>
+
   <!-- URGENCY REMINDER -->
   <div class="urgency-box">
     <p><strong>Why now?</strong> I'll be spending 5-14 days personally studying your chart across all systems before we speak. The sooner you book, the sooner I start preparing — and the sooner you get the clarity you paid for.</p>
   </div>
+
 </div>
+
 <footer class="footer">&copy; 2025 Rafi's World. All rights reserved.</footer>
+
 </body>
 </html>

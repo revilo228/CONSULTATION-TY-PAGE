@@ -2,377 +2,325 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>You're In — Next Steps | Rafi's World</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Wistia Player -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>You're booked: next steps | Rafi's World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&display=swap" rel="stylesheet">
 <script src="https://fast.wistia.com/player.js" async></script>
 <script src="https://fast.wistia.com/embed/uzf9p7lkq8.js" async type="module"></script>
-<style>wistia-player[media-id='uzf9p7lkq8']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/uzf9p7lkq8/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
-
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "u7qcnghg1s");
-</script>
-
+<style>wistia-player[media-id='uzf9p7lkq8']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/uzf9p7lkq8/swatch'); display: block; filter: blur(5px); padding-top: 56.25%; }</style>
 <style>
+/* Same design as the Rafi's World landing page (Rafi brand: cream, navy, gold, red buttons).
+   To match the R Two style version instead, change <body> to <body class="rtwo">. */
 :root {
-  --bg: #0C0A09;
-  --surface: #1C1917;
-  --surface2: #292524;
-  --surface3: #3B3835;
-  --amber: #F59E0B;
-  --amber-dim: #92400E;
-  --amber-glow: rgba(245, 158, 11, 0.12);
-  --emerald: #34D399;
-  --rose: #FB7185;
-  --text: #F5F5F4;
-  --text-dim: #A8A29E;
-  --text-muted: #78716C;
+  --cream: #F6F1E7; --panel: #FBF8F2; --white: #FFFFFF; --ink: #1E2235; --slate: #5C5F70;
+  --sand: #D6CDBC; --sand-soft: #EAE3D4; --gold: #B08028; --gold-text: #8A6420; --gold-soft: #F3E7CC;
+  --cta: #B3261E; --cta-hover: #8F1D17; --ok: #1F6B3A; --ok-soft: #E4F1E7; --err: #A8281F;
+  --display: 'Cormorant Garamond', Georgia, serif; --body: 'Inter', -apple-system, sans-serif;
 }
-
+body.rtwo {
+  --cream: #FFFFFF; --panel: #F2F5FB; --ink: #0B1B33; --slate: #56637A; --sand: rgba(11,27,51,0.18); --sand-soft: rgba(11,27,51,0.10);
+  --gold: #556B2F; --gold-text: #556B2F; --gold-soft: rgba(85,107,47,0.10); --cta: #D62839; --cta-hover: #B81F2F;
+  --display: 'Fraunces', Georgia, serif; --body: 'DM Sans', -apple-system, sans-serif;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+body { font-family: var(--body); background: var(--cream); color: var(--ink); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; }
+body.rtwo h1, body.rtwo h2, body.rtwo h3 { font-weight: 500; letter-spacing: -0.02em; }
+.page { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+.top { text-align: center; }
+.ok-badge { display: inline-block; background: var(--ok-soft); color: var(--ok); font-weight: 600; font-size: 14px; padding: 6px 16px; border-radius: 100px; margin-bottom: 18px; }
+h1 { font-size: clamp(34px, 5vw, 50px); margin-bottom: 14px; }
+.lead { color: var(--slate); font-size: 18px; max-width: 560px; margin: 0 auto; }
+.note { font-size: 14px; color: var(--slate); }
+.card { background: var(--white); border: 1px solid var(--sand); border-radius: 14px; padding: 28px; margin-top: 28px; }
+body.rtwo .card { border-radius: 16px; box-shadow: 0 40px 80px -40px rgba(10,31,68,0.35); }
+.video { border-radius: 14px; overflow: hidden; background: var(--ink); margin-top: 32px; }
+.video-cap { font-size: 14px; color: var(--slate); text-align: center; margin-top: 8px; }
 
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent;
-  min-height: 100vh;
-}
+/* steps */
+.steps { list-style: none; counter-reset: s; margin-top: 8px; }
+.steps li { counter-increment: s; display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--sand-soft); }
+.steps li:last-child { border-bottom: 0; }
+.steps li::before { content: counter(s); flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--gold-soft); color: var(--gold-text); font-weight: 700; font-size: 15px; display: grid; place-items: center; }
+.steps li.done::before { content: "\2713"; background: var(--ok-soft); color: var(--ok); }
+.steps b { display: block; }
+.steps span { font-size: 15px; color: var(--slate); }
 
-.page {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
-}
+/* reading picker (if the page is opened without ?r=) */
+.pick { display: grid; gap: 10px; margin-top: 16px; }
+.pick button { text-align: left; font: inherit; padding: 14px 16px; border: 1px solid var(--sand); background: var(--panel); border-radius: 10px; cursor: pointer; color: var(--ink); }
+.pick button:hover { border-color: var(--ink); }
 
-/* ============================================
-   CONFIRMATION HEADER
-   ============================================ */
-.confirm-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(52, 211, 153, 0.12);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  color: var(--emerald);
-  padding: 8px 20px;
-  border-radius: 100px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.page-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.page-header h1 {
-  font-family: 'Instrument Serif', serif;
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 400;
-  line-height: 1.15;
-  margin-bottom: 12px;
-}
-.page-header h1 em { color: var(--amber); font-style: italic; }
-
-.page-header .sub {
-  font-size: 17px;
-  color: var(--text-dim);
-  max-width: 520px;
-  margin: 0 auto 24px;
-  line-height: 1.6;
-}
-
-.email-notice {
-  background: var(--surface);
-  border: 1px solid var(--surface2);
-  border-radius: 10px;
-  padding: 14px 20px;
-  font-size: 14px;
-  color: var(--text-dim);
-  display: inline-block;
-}
-.email-notice strong { color: var(--amber); }
-
-/* ============================================
-   VSL
-   ============================================ */
-.vsl-section {
-  margin: 48px 0;
-}
-
-.vsl-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--amber);
-  margin-bottom: 14px;
-}
-.vsl-label::before {
-  content: '';
-  width: 16px;
-  height: 2px;
-  background: var(--amber);
-}
-
-.vsl-wrapper {
-  background: var(--surface);
-  border: 2px solid var(--amber);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 40px var(--amber-glow);
-}
-
-/* ============================================
-   STEPS
-   ============================================ */
-.steps-section {
-  margin: 48px 0;
-}
-
-.steps-title {
-  font-family: 'Instrument Serif', serif;
-  font-size: 24px;
-  margin-bottom: 24px;
-  text-align: center;
-}
-.steps-title em { color: var(--amber); font-style: italic; }
-
-.step {
-  background: var(--surface);
-  border: 1px solid var(--surface2);
-  border-radius: 12px;
-  padding: 22px 24px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  transition: border-color 0.3s;
-}
-.step:hover { border-color: var(--amber); }
-
-.step-num {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  background: var(--amber);
-  color: var(--bg);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-.step-text h4 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 3px;
-}
-.step-text p {
-  font-size: 14px;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-/* ============================================
-   CTA BUTTON
-   ============================================ */
-.cta-section {
-  margin: 48px 0 32px;
-  text-align: center;
-}
-
-.btn-book {
-  display: block;
-  width: 100%;
-  background: var(--amber);
-  color: var(--bg);
-  padding: 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-}
-.btn-book:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.35);
-}
-.btn-book::after {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-  animation: shimmer 3s infinite;
-}
-@keyframes shimmer { 0% { left: -100%; } 100% { left: 100%; } }
-
-.cta-note {
-  margin-top: 14px;
-  font-size: 13px;
-  color: var(--text-muted);
-}
-.cta-note span { color: var(--emerald); }
-
-/* ============================================
-   URGENCY / REMINDER
-   ============================================ */
-.urgency-box {
-  background: rgba(245, 158, 11, 0.08);
-  border: 1px solid rgba(245, 158, 11, 0.2);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-align: center;
-  margin-top: 32px;
-}
-.urgency-box p {
-  font-size: 14px;
-  color: var(--text-dim);
-  line-height: 1.6;
-}
-.urgency-box strong { color: var(--amber); }
-
-/* ============================================
-   FOOTER
-   ============================================ */
-.footer {
-  text-align: center;
-  padding: 32px 24px;
-  font-size: 12px;
-  color: var(--text-muted);
-  border-top: 1px solid var(--surface2);
-  margin-top: 48px;
-}
-
-/* ============================================
-   MOBILE
-   ============================================ */
-@media (max-width: 768px) {
-  .page { padding: 28px 16px 60px; }
-
-  .page-header { margin-bottom: 36px; }
-  .page-header h1 { font-size: 26px; }
-  .page-header .sub { font-size: 15px; margin-bottom: 18px; }
-  .confirm-badge { font-size: 11px; padding: 6px 14px; }
-  .email-notice { font-size: 13px; padding: 12px 14px; }
-
-  .vsl-section { margin: 32px 0; }
-  .vsl-wrapper { border-radius: 12px; }
-  .vsl-label { font-size: 11px; letter-spacing: 1.5px; }
-
-  .steps-section { margin: 32px 0; }
-  .steps-title { font-size: 20px; margin-bottom: 18px; }
-  .step { padding: 16px 16px; gap: 12px; border-radius: 10px; margin-bottom: 10px; }
-  .step-num { width: 28px; height: 28px; min-width: 28px; font-size: 13px; }
-  .step-text h4 { font-size: 14px; }
-  .step-text p { font-size: 13px; }
-
-  .cta-section { margin: 32px 0 24px; }
-  .btn-book { padding: 18px; font-size: 15px; min-height: 56px; border-radius: 10px; }
-  .cta-note { font-size: 12px; }
-
-  .urgency-box { padding: 16px 16px; border-radius: 10px; margin-top: 24px; }
-  .urgency-box p { font-size: 13px; }
-
-  .footer { padding: 24px 16px; font-size: 11px; margin-top: 36px; }
-}
-
-@media (max-width: 390px) {
-  .page-header h1 { font-size: 23px; }
-  .btn-book { font-size: 14px; }
-}
+/* form */
+h2 { font-size: 30px; margin-bottom: 6px; }
+fieldset { border: 0; margin-top: 22px; }
+legend { font-family: var(--display); font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+label { display: block; font-weight: 600; font-size: 15px; margin: 16px 0 6px; }
+label small { font-weight: 400; color: var(--slate); }
+input, select, textarea { width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid var(--sand); border-radius: 10px; background: var(--white); color: var(--ink); }
+textarea { min-height: 84px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.hint { font-size: 14px; color: var(--slate); margin-top: 6px; }
+.tick { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 15px; color: var(--slate); }
+.tick input { width: auto; margin-top: 5px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 26px; border-radius: 8px; border: 0; font: inherit; font-weight: 600; font-size: 16px; text-decoration: none; cursor: pointer; background: var(--cta); color: #fff; }
+body.rtwo .btn { border-radius: 5px; font-weight: 700; box-shadow: 0 8px 24px rgba(214,40,57,0.28); }
+.btn:hover { background: var(--cta-hover); }
+.btn-block { display: flex; width: 100%; margin-top: 22px; }
+.err { color: var(--err); font-size: 15px; margin-top: 12px; }
+.guarantee { font-size: 14px; color: var(--slate); text-align: center; margin-top: 28px; }
+footer { text-align: center; font-size: 13px; color: var(--slate); padding: 28px 20px; border-top: 1px solid var(--sand); }
+[hidden] { display: none !important; }
+@media (max-width: 560px) { .row2 { grid-template-columns: 1fr; } .card { padding: 22px 18px; } h1 { font-size: 32px; } }
 </style>
 </head>
 <body>
-
 <div class="page">
 
-  <!-- CONFIRMATION HEADER -->
-  <div class="page-header">
-    <div class="confirm-badge">✓ Payment Confirmed</div>
-    <h1>Welcome to <em>The Inner Circle.</em></h1>
-    <p class="sub">Your session is secured. I'm going to personally prepare your chart before we speak — but first, there's one critical step you need to complete right now.</p>
-    <div class="email-notice">
-      📩 Check your inbox — a confirmation email with your receipt and access details has been sent to <strong>your email</strong>.
+  <div class="top">
+    <div class="ok-badge">&#10003; Payment confirmed</div>
+    <h1 id="title">Your Consultation is Booked</h1>
+    <p class="lead" id="intro"><span style="color:var(--cta);font-weight:600">For the best session possible,</span> please fill out your birth details and some questions below.</p>
+    <p class="note" style="margin-top:12px">Your receipt is on its way to your email.</p>
+  </div>
+
+  <div class="video">
+    <wistia-player media-id="uzf9p7lkq8" aspect="1.7777777777777777"></wistia-player>
+  </div>
+  <p class="video-cap">Watch this first: what happens between now and your reading.</p>
+
+  <div class="card">
+    <h2>Your next steps</h2>
+    <ol class="steps" id="steps"></ol>
+  </div>
+
+  <!-- shown only if the page was opened without ?r= -->
+  <div class="card" id="picker" hidden>
+    <h2>Which reading did you book?</h2>
+    <div class="pick">
+      <button type="button" data-r="career">Trinity Career Roadmap</button>
+      <button type="button" data-r="compat">Trinity Compatibility</button>
+      <button type="button" data-r="blueprint">Complete Blueprint</button>
+      <button type="button" data-r="numcall">Numerology Call</button>
+      <button type="button" data-r="written">Written Reading</button>
     </div>
   </div>
 
-  <!-- VSL -->
-  <div class="vsl-section">
-    <div class="vsl-label">⚡ Watch This Before Your Session</div>
-    <div class="vsl-wrapper">
-      <wistia-player media-id="uzf9p7lkq8" aspect="1.7777777777777777"></wistia-player>
-    </div>
-  </div>
+  <form class="card" id="intake" name="intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden novalidate>
+    <input type="hidden" name="form-name" value="intake">
+    <input type="hidden" name="reading" id="fReading">
+    <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+    <h2>Your details</h2>
+    <p class="note">Everything here is used only to prepare your reading. It's never shared.</p>
 
-  <!-- REQUIRED STEPS -->
-  <div class="steps-section">
-    <h2 class="steps-title">Your 3 <em>Required</em> Next Steps</h2>
-
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-text">
-        <h4>Book Your Session Immediately</h4>
-        <p>Secure your slot on my calendar using the button below. Spots fill fast — I only take a limited number of clients per month because each chart requires days of preparation.</p>
+    <fieldset>
+      <legend>About you</legend>
+      <label for="name">Full name</label><input id="name" name="name" autocomplete="name" required>
+      <div class="row2">
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="whatsapp">WhatsApp number <small>(with country code)</small></label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+44 7..." required></div>
       </div>
-    </div>
+    </fieldset>
 
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-text">
-        <h4>Complete the Intake Form</h4>
-        <p>Once booked, you'll receive a short form. I need your <strong style="color:var(--text)">precise birth time (to the minute), date, and location</strong> at least 24 hours before we speak — this is non-negotiable for chart accuracy.</p>
+    <fieldset id="birthSet">
+      <legend>Your birth details</legend>
+      <div class="row2">
+        <div><label for="dob">Date of birth</label><input id="dob" name="dob" type="date" required></div>
+        <div><label for="tob">Time of birth</label><input id="tob" name="birth_time" type="time"></div>
       </div>
-    </div>
-
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-text">
-        <h4>Block 2.5 Hours in Your Calendar</h4>
-        <p>Your session is 2 hours, but we often go deeper. Do not schedule anything immediately after. Set an alarm. Treat this like the most important meeting of the quarter — because it is.</p>
+      <label for="certainty">How sure are you of that time?</label>
+      <select id="certainty" name="time_certainty" required>
+        <option value="">Choose one</option>
+        <option>Birth certificate or hospital record</option>
+        <option>A parent told me</option>
+        <option>Rough guess</option>
+        <option>I don't know it</option>
+      </select>
+      <p class="hint">Don't know your time? Leave it blank and choose "I don't know it". Even 15 minutes can change your rising sign, so this matters. If you're not sure, say so and I'll check it against events in your life.</p>
+      <div class="row2">
+        <div><label for="pob">Town or city of birth</label><input id="pob" name="birth_place" placeholder="e.g. Croydon" required></div>
+        <div><label for="cob">Country of birth</label><input id="cob" name="birth_country" required></div>
       </div>
-    </div>
+      <label for="now">Where do you live now? <small>(town and country)</small></label><input id="now" name="current_city">
+    </fieldset>
+
+    <!-- CAREER -->
+    <fieldset data-for="career" hidden>
+      <legend>Your career and money</legend>
+      <label for="c_work">What do you do now?</label><input id="c_work" name="career_work" placeholder="Role, industry, employed or own business">
+      <label for="c_dec">What decision are you facing, if any?</label><textarea id="c_dec" name="career_decision"></textarea>
+      <label for="c_q">Your 3 biggest career or money questions</label><textarea id="c_q" name="career_questions" placeholder="1.&#10;2.&#10;3."></textarea>
+    </fieldset>
+
+    <!-- COMPATIBILITY -->
+    <fieldset data-for="compat" hidden>
+      <legend>Their birth details</legend>
+      <label for="p_name">Their first name</label><input id="p_name" name="partner_name">
+      <div class="row2">
+        <div><label for="p_dob">Their date of birth</label><input id="p_dob" name="partner_dob" type="date"></div>
+        <div><label for="p_tob">Their time of birth</label><input id="p_tob" name="partner_birth_time" type="time"></div>
+      </div>
+      <label for="p_cert">How sure are you of their time?</label>
+      <select id="p_cert" name="partner_time_certainty"><option value="">Choose one</option><option>Birth certificate or hospital record</option><option>They or a parent told me</option><option>Rough guess</option><option>I don't know it</option></select>
+      <label for="p_pob">Their town and country of birth</label><input id="p_pob" name="partner_birth_place">
+      <div class="row2">
+        <div><label for="p_len">How long have you known each other?</label><input id="p_len" name="relationship_length"></div>
+        <div><label for="p_status">Where are things now?</label>
+          <select id="p_status" name="relationship_status"><option value="">Choose one</option><option>Dating</option><option>In a relationship</option><option>Engaged or married</option><option>On a break or separated</option><option>Not together yet</option></select></div>
+      </div>
+      <label for="p_q">What do you most want to know about this relationship?</label><textarea id="p_q" name="relationship_question"></textarea>
+    </fieldset>
+
+    <!-- BLUEPRINT -->
+    <fieldset data-for="blueprint" hidden>
+      <legend>Your life map</legend>
+      <label for="b_pri">Which areas matter most to you right now? <small>(in order)</small></label>
+      <input id="b_pri" name="priorities" placeholder="e.g. career, money, relationship, health, family">
+      <label>3 big events in your life, with dates <small>(this lets me check your birth time against real events)</small></label>
+      <input name="event_1" placeholder="e.g. March 2019: moved to London" style="margin-bottom:8px">
+      <input name="event_2" placeholder="e.g. June 2021: started my business" style="margin-bottom:8px">
+      <input name="event_3" placeholder="e.g. Oct 2023: end of a relationship">
+      <label for="b_q">Anything specific you want me to look at?</label><textarea id="b_q" name="blueprint_questions"></textarea>
+    </fieldset>
+
+    <!-- NUMEROLOGY CALL -->
+    <fieldset data-for="numcall" hidden>
+      <legend>Your names</legend>
+      <label for="n_birth">Your full name at birth <small>(exactly as on your birth certificate)</small></label><input id="n_birth" name="birth_full_name">
+      <label for="n_now">The name you use now, if different</label><input id="n_now" name="current_name">
+      <label for="n_q">What would you most like to know?</label><textarea id="n_q" name="numerology_question"></textarea>
+    </fieldset>
+
+    <!-- WRITTEN -->
+    <fieldset data-for="written" hidden>
+      <legend>Your 5 questions</legend>
+      <p class="hint">One question per box. Be specific: "should I take the job offer in March?" gets a sharper answer than "what about my career?"</p>
+      <label for="w1">Question 1</label><textarea id="w1" name="question_1" style="min-height:60px"></textarea>
+      <label for="w2">Question 2</label><textarea id="w2" name="question_2" style="min-height:60px"></textarea>
+      <label for="w3">Question 3</label><textarea id="w3" name="question_3" style="min-height:60px"></textarea>
+      <label for="w4">Question 4</label><textarea id="w4" name="question_4" style="min-height:60px"></textarea>
+      <label for="w5">Question 5</label><textarea id="w5" name="question_5" style="min-height:60px"></textarea>
+      <p class="hint">You'll also get 2 follow-up questions after your PDF arrives.</p>
+    </fieldset>
+
+    <label class="tick" style="margin-top:22px"><input type="checkbox" id="consent" name="consent" value="yes"> I agree to Rafi using these details to prepare my reading and contacting me about it.</label>
+    <button class="btn btn-block" type="submit" id="send">Send My Details</button>
+    <div class="err" id="formErr" hidden></div>
+  </form>
+
+  <!-- AFTER SUBMIT -->
+  <div class="card" id="afterCall" hidden>
+    <h2>Got it. Now pick your time.</h2>
+    <p class="note" style="font-size:16px">Choose a slot at least <b id="prepDays">5 days</b> from today, so I have time to prepare your chart properly.</p>
+    <a class="btn btn-block" id="bookBtn" href="#" target="_blank" rel="noopener">Book My Time</a>
+    <p class="note" id="noCal" hidden style="margin-top:14px;font-size:16px">I'll message you on WhatsApp within 24 hours to arrange a time that suits you.</p>
+  </div>
+  <div class="card" id="afterWritten" hidden>
+    <h2>Got it. Your reading is under way.</h2>
+    <p style="font-size:16px">Your PDF will be with you within <b>48 hours</b>, by email and WhatsApp. When you've read it, send me your 2 follow-up questions.</p>
+    <p class="note" style="margin-top:12px">Want the conversation too? Your $98 comes off a Career, Compatibility or Blueprint reading booked within 14 days.</p>
   </div>
 
-  <!-- CTA -->
-  <div class="cta-section">
-    <a href="https://calendly.com/rafy-/blueprint-analysis" class="btn-book" target="_blank">
-      Book My Session Now →
-    </a>
-    <p class="cta-note"><span>🛡</span> Your spot isn't confirmed until it's on my calendar. Book now to lock in your date.</p>
-  </div>
-
-  <!-- URGENCY REMINDER -->
-  <div class="urgency-box">
-    <p><strong>Why now?</strong> I'll be spending 5-14 days personally studying your chart across all systems before we speak. The sooner you book, the sooner I start preparing — and the sooner you get the clarity you paid for.</p>
-  </div>
-
+  <p class="guarantee">Trained in Vedic astrology through Magha Vedic Astrology Academy. If your reading doesn't give you clear direction, I'll refund you in full.</p>
 </div>
 
-<footer class="footer">&copy; 2025 Rafi's World. All rights reserved.</footer>
+<footer>&copy; 2026 Rafi's World. Readings are for guidance only and are not a substitute for medical, legal, financial or psychological advice.</footer>
 
+<script>
+(function () {
+  /* ===== SETTINGS: edit these ===== */
+  // Booking links per consultation. Leave '' if there isn't one yet: the page then says you'll arrange a time on WhatsApp.
+  var BOOKING = {
+    career:    '',  // e.g. https://calendly.com/rafy-/career-roadmap  (60 min)
+    compat:    '',  // e.g. https://calendly.com/rafy-/compatibility    (60 min)
+    blueprint: 'https://calendly.com/rafy-/blueprint-analysis',        // 90 min
+    numcall:   ''   // e.g. https://calendly.com/rafy-/numerology-call  (30 min)
+  };
+  /* ================================= */
+  var R = {
+    career:    { name: 'Trinity Career Roadmap', prep: '5 days',  call: true },
+    compat:    { name: 'Trinity Compatibility',  prep: '5 days',  call: true },
+    blueprint: { name: 'Complete Blueprint',     prep: '14 days', call: true },
+    numcall:   { name: 'Numerology Call',        prep: '5 days',  call: true },
+    written:   { name: 'Written Reading',        prep: '48 hours', call: false }
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $('intake'), r = (new URLSearchParams(location.search).get('r') || '').toLowerCase();
+
+  function steps(stage) {
+    var x = R[r] || { call: true, prep: '5 to 14 days' };
+    var list = [['Send me your details', 'The form below, about 3 minutes.']];
+    if (x.call) {
+      list.push(['Pick your time', 'Straight after the form. Choose a slot at least ' + x.prep + ' away.']);
+      list.push(['I prepare your chart', 'I study your chart personally for ' + x.prep + ' before we speak.']);
+      list.push(['Your call', 'Have your questions ready. You can ask anything.']);
+    } else {
+      list.push(['I prepare your answers', 'Each of your 5 questions answered from your chart.']);
+      list.push(['Your PDF arrives', 'Within 48 hours, then you send me 2 follow-up questions.']);
+    }
+    $('steps').innerHTML = list.map(function (s, i) { return '<li' + (i < stage ? ' class="done"' : '') + '><div><b>' + s[0] + '</b><span>' + s[1] + '</span></div></li>'; }).join('');
+  }
+  function setReading(key) {
+    r = key; var x = R[r];
+    $('picker').hidden = true; form.hidden = false;
+    $('fReading').value = x.name;
+    document.querySelectorAll('fieldset[data-for]').forEach(function (f) { f.hidden = f.dataset.for !== r; });
+    steps(0);
+  }
+  if (R[r]) setReading(r); else { $('picker').hidden = false; steps(0); }
+  document.querySelectorAll('#picker button').forEach(function (b) { b.onclick = function () { setReading(b.dataset.r); form.scrollIntoView({ behavior: 'smooth' }); }; });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var err = $('formErr'); err.hidden = true;
+    // check the shared required fields and the visible reading-specific ones
+    var missing = [];
+    form.querySelectorAll('[required]').forEach(function (el) { if (!String(el.value).trim()) missing.push(el); });
+    if (!$('tob').value && $('certainty').value !== "I don't know it") missing.push($('tob'));  // time optional only if they don't know it
+    if (r === 'compat' && !$('p_dob').value) missing.push($('p_dob'));
+    if (r === 'written' && !$('w1').value.trim()) missing.push($('w1'));
+    if (r === 'numcall' && !$('n_birth').value.trim()) missing.push($('n_birth'));
+    if (missing.length) { err.textContent = 'Please fill in the highlighted details.'; err.hidden = false; missing.forEach(function (el) { el.style.borderColor = 'var(--err)'; }); missing[0].focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('email').value.trim())) { err.textContent = 'Please check your email address.'; err.hidden = false; $('email').focus(); return; }
+    if (!$('consent').checked) { err.textContent = 'Please tick the box so I can use your details for your reading.'; err.hidden = false; return; }
+    // only send the reading's own fields
+    var data = new URLSearchParams();
+    new FormData(form).forEach(function (v, k) {
+      var el = form.elements[k], fs = el && (el.closest ? el.closest('fieldset[data-for]') : null);
+      if (!fs || !fs.hidden) data.append(k, v);
+    });
+    var btn = $('send'); btn.disabled = true; btn.textContent = 'Sending...';
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
+      .then(function (res) { if (!res.ok) throw new Error(res.status); done(); })
+      .catch(function () { btn.disabled = false; btn.textContent = 'Send My Details'; err.textContent = 'Something went wrong. Please try again, or send your details to me on WhatsApp.'; err.hidden = false; });
+  });
+  function done() {
+    form.hidden = true; var x = R[r];
+    if (x.call) {
+      $('afterCall').hidden = false; $('prepDays').textContent = x.prep;
+      var link = BOOKING[r];
+      if (link) {
+        var p = new URLSearchParams({ name: $('name').value.trim(), email: $('email').value.trim() });  // Calendly fills these in
+        $('bookBtn').href = link + (link.indexOf('?') > -1 ? '&' : '?') + p.toString();
+      } else { $('bookBtn').hidden = true; $('noCal').hidden = false; }
+      steps(1);
+      $('afterCall').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      $('afterWritten').hidden = false; steps(1);
+      $('afterWritten').scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+})();
+</script>
+<script>
+// Microsoft Clarity (same project as the landing page), loaded after the page
+window.addEventListener('load', function () { setTimeout(function () {
+  (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "u7qcnghg1s");
+}, 500); });
+</script>
 </body>
 </html>
